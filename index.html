@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="restaurantApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrapflatly.min.css">
+    <title>Restaurant Reviews</title>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+</head>
+
+<body ng-controller="RestaurantListCtrl" ng-init="init()">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Restaurant Reviews</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Rating <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">2 *s and up</a></li>
+            <li><a href="#">3 *s and up</a></li>
+            <li><a href="#">4 *s and up</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cuisine <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Fast Food</a></li>
+            <li><a href="#">Mexican</a></li>
+            <li><a href="#">Italian</a></li>
+            <li><a href="#">Chinese</a></li>
+            <li><a href="#">Pizza</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Price <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">$</a></li>
+            <li><a href="#">$$</a></li>
+            <li><a href="#">$$$</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="restaurant in restaurants">
+                <img src="{{restaurant.image}}">
+                <div><strong>{{restaurant.name}}</strong></div>
+                <div>{{restaurant.address}}</div>
+                <div>{{restaurant.phone}}</div>
+                <div>Hours:
+                    <br>Sunday: {{restaurant.hours[0]}}
+                    <br>Monday: {{restaurant.hours[1]}}
+                </div>
+                <div>{{restaurant.description}}</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

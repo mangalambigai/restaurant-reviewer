@@ -1,0 +1,76 @@
+[
+	{
+		"name": "Subway",
+		"type": "Fast Food",
+		"address": "18 Central St, Foxborough, MA 02035",
+		"phone": "(508) 543-1315",
+		"hours": [
+			"8AM–9:30PM",
+			"7AM–9:30PM",
+			"7AM–9:30PM",
+			"7AM–9:30PM",
+			"7AM–9:30PM",
+			"7AM–9:30PM",
+			"8AM–9:30PM"
+		],
+		"description": "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
+		"price": "$",
+		"image": "//lh5.googleusercontent.com/proxy/itHDWCZZ8VrMmtCmML_rlQt4OitZ66RhNEugsc7K3ZdvgeSDh4HMj9vWfiYBn_595wUWgJxQsWsHnGEzdxCrYhuuMMkcepbQFvSK78QRpmUNydco3wWkjo9UeB_9BvN8JAevDjLebr5O4Yj_xVjXPEk2Bq-nWirc_crF=w300-h200"
+	},
+
+	{
+		"name": "Wendy's",
+		"type": "Fast Food",
+		"address": "64 Copeland Dr, Mansfield, MA 02048",
+		"phone": "(508) 339-7284",
+		"hours": [
+			"10AM–10PM",
+			"10AM–10PM",
+			"10AM–10PM",
+			"10AM–10PM",
+			"10AM–10PM",
+			"10AM–10PM",
+			"10AM–10PM"
+		],
+		"price": "$",
+		"description": "Fast-food burger chain known for its shakes, as well as sides such as chili & baked potatoes.",
+		"image": "//lh3.googleusercontent.com/proxy/wsk7GjUsXBVl4EonXhTrFN0n8i8xjGqtMuH1StMmPbEdtdnA9qv2Iq0M8bSKLwhHgtxk8814-9l8JUAD9Fo0P4Re0kVA3lX8tQBeRf5TUZd4ROwA1KWwLBX6fyxrFv8EdffNj5XUWzUW4Q0itdUL0SJWUpM82koubam3=w300-h200"
+	},
+
+	{
+		"name": "Chipotle Mexican Grill",
+		"price": "$",
+		"type": "Mexican Restaurant",
+		"address": "287 School St #110, Mansfield, MA 02048",
+		"phone": "(508) 339-2061",
+		"hours": [
+			"Closed",
+			"11AM–10PM",
+			"11AM–10PM",
+			"11AM–10PM",
+			"11AM–10PM",
+			"11AM–10PM",
+			"11AM–10PM"
+		],
+		"description": "Fast-food chain offering Mexican fare, including design-your-own burritos, tacos & bowls.",
+		"image": "//lh4.googleusercontent.com/proxy/KPNtHyPVvC8EVcKQQ74jkAXHI4VykImiucge5geJx5ByZPFhU5rRkqeGYkh2GyKL0rLxrcx2_OSt7YWdpSBQBph12PRJZ2g-MvBjWKciqBkuGfojqmx2LtcJIjHlgiJzs3-xzN2bX3O10rJ9U3XbEOCfQ8itnFSqRH-Z=w300-h200"
+	},
+	{
+		"name": "Olive Garden",
+		"price": "$$",
+		"type": "Italian Restaurant",
+		"address": "392 Patriot Pl, Foxborough, MA 02035",
+		"phone": "(508) 543-3967",
+		"hours": [
+			"11AM–10PM",
+			"11AM–10PM",
+			"11AM–10PM",
+			"11AM–10PM",
+			"11AM–10PM",
+			"11AM–11PM",
+			"11AM–11PM"
+		],
+		"description": "Lively, family-friendly chain featuring Italian standards such as pastas & salads, with a full bar.",
+		"image": "//lh5.googleusercontent.com/proxy/bQw_EYcwZkF6uz5VuIbq0WA36U_vGxp2qsMMQHceNjaRqj_kMhtMTidaSk6Vngk0uQ4uANgJLxPD0PEeePSjgShS7P74bRON5-q0tWIppxxjHZLl12ppjTZC1sXDYI4z7RU-4-qtmfa4AyWAoXoJeYPLXPY0IdVXBVGn=w300-h200"
+	}
+]
