@@ -15,6 +15,16 @@ angular.module('restaurantApp', [])
  *
  */
 .controller('RestaurantListCtrl', ['$scope', function($scope) {
+
+    $scope.getData = function() {
+        $.getJSON('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+
+            '&radius=500&type=restaurant&key=', function(data) {
+
+            console.log(data);
+        });
+        //https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&key=YOUR_API_KEY
+    };
+
     $scope.init = function() {
         $.getJSON( 'data/restaurants.json', function() {
             console.log('got json data');
@@ -26,6 +36,12 @@ angular.module('restaurantApp', [])
         }).fail(function(error) {
         	console.log(error);
         });
+
+    };
+
+    $scope.filterRestaurants = function(element) {
+
+        return true;
 
     };
 }]);
