@@ -59,9 +59,10 @@
 </nav>
     <div class="container-fluid" >
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="restaurant in restaurants">
+            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="restaurant in restaurants| filter: filterRestaurants" tabindex="0" role="link" data-toggle="modal" data-target="#myModal">
                 <img src="{{restaurant.image}}">
                 <div><strong>{{restaurant.name}}</strong></div>
+                <div ng-show="restaurant.rating">{{restaurant.rating}} stars</div>
                 <div>{{restaurant.address}}</div>
                 <div>{{restaurant.phone}}</div>
                 <div>Hours:
@@ -72,6 +73,25 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/all.js"></script>
 </body>
