@@ -11,57 +11,43 @@
 </head>
 
 <body ng-controller="RestaurantListCtrl" ng-init="init()">
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Restaurant Reviews</a>
-    </div>
+    <header>
+        <div class="navbar navbar-reverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Restaurant Reviews</a>
+                </div>
+                <form class="navbar-form navbar-left" role="search">
+                    <select class="form-control" ng-model="type">
+                        <option>All types</option>
+                        <option>Fast Food</option>
+                        <option>Mexican</option>
+                        <option>Italian</option>
+                        <option>Chinese</option>
+                        <option>Pizza</option>
+                    </select>
+                    <select class="form-control" ng-model="price">
+                        <option>All prices</option>
+                        <option>$</option>
+                        <option>$$</option>
+                        <option>$$$</option>
+                    </select>
+                    <select class="form-control" ng-model="rating">
+                        <option>All ratings</option>
+                        <option>**</option>
+                        <option>***</option>
+                        <option>****</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </header>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Rating <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">2 *s and up</a></li>
-            <li><a href="#">3 *s and up</a></li>
-            <li><a href="#">4 *s and up</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cuisine <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Fast Food</a></li>
-            <li><a href="#">Mexican</a></li>
-            <li><a href="#">Italian</a></li>
-            <li><a href="#">Chinese</a></li>
-            <li><a href="#">Pizza</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Price <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">$</a></li>
-            <li><a href="#">$$</a></li>
-            <li><a href="#">$$$</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
     <div class="container-fluid" >
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="restaurant in restaurants| filter: filterRestaurants" tabindex="0" role="link" data-toggle="modal" data-target="#myModal">
+            <article class="col-xs-12 col-sm-6 col-md-3" ng-repeat="restaurant in restaurants| filter: filterRestaurants" tabindex="0" role="link" data-toggle="modal" data-target="#myModal" data-restaurant="{{restaurant.name}}">
                 <img src="{{restaurant.image}}">
-                <div><strong>{{restaurant.name}}</strong></div>
+                <h3>{{restaurant.name}}</h3>
                 <div ng-show="restaurant.rating">{{restaurant.rating}} stars</div>
                 <div>{{restaurant.address}}</div>
                 <div>{{restaurant.phone}}</div>
@@ -70,7 +56,7 @@
                     <br>Monday: {{restaurant.hours[1]}}
                 </div>
                 <div>{{restaurant.description}}</div>
-            </div>
+            </article>
         </div>
     </div>
 

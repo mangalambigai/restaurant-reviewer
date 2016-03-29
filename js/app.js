@@ -26,10 +26,14 @@ angular.module('restaurantApp', [])
     };
 
     $scope.init = function() {
+        $scope.type = 'All types';
+        $scope.price = 'All prices';
+        $scope.rating = 'All ratings';
+
         $.getJSON( 'data/restaurants.json', function() {
             console.log('got json data');
         }).done(function(data) {
-            console.log(data);
+            //console.log(data);
             $scope.$apply(function() {
                 $scope.restaurants = data;
             })
@@ -41,6 +45,20 @@ angular.module('restaurantApp', [])
 
     $scope.filterRestaurants = function(element) {
 
+        if ($scope.type !== 'All types')
+        {
+            //if (element.type)
+        }
+        if ($scope.price != 'All prices')
+        {
+            if (element.price != $scope.price)
+                return false;
+        }
+        if ($scope.rating != 'All ratings')
+        {
+            if (element.rating != $scope.rating)
+                return false;
+        }
         return true;
 
     };
