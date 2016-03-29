@@ -34,7 +34,9 @@
 		],
 		"price": "$",
 		"description": "Fast-food burger chain known for its shakes, as well as sides such as chili & baked potatoes.",
-		"image": "//lh3.googleusercontent.com/proxy/wsk7GjUsXBVl4EonXhTrFN0n8i8xjGqtMuH1StMmPbEdtdnA9qv2Iq0M8bSKLwhHgtxk8814-9l8JUAD9Fo0P4Re0kVA3lX8tQBeRf5TUZd4ROwA1KWwLBX6fyxrFv8EdffNj5XUWzUW4Q0itdUL0SJWUpM82koubam3=w300-h200"
+		"image": "//lh3.googleusercontent.com/proxy/wsk7GjUsXBVl4EonXhTrFN0n8i8xjGqtMuH1StMmPbEdtdnA9qv2Iq0M8bSKLwhHgtxk8814-9l8JUAD9Fo0P4Re0kVA3lX8tQBeRf5TUZd4ROwA1KWwLBX6fyxrFv8EdffNj5XUWzUW4Q0itdUL0SJWUpM82koubam3=w300-h200",
+		"rating": "3",
+		"reviews": "data/review_wendys.json"
 	},
 
 	{
@@ -53,7 +55,9 @@
 			"11AM–10PM"
 		],
 		"description": "Fast-food chain offering Mexican fare, including design-your-own burritos, tacos & bowls.",
-		"image": "//lh4.googleusercontent.com/proxy/KPNtHyPVvC8EVcKQQ74jkAXHI4VykImiucge5geJx5ByZPFhU5rRkqeGYkh2GyKL0rLxrcx2_OSt7YWdpSBQBph12PRJZ2g-MvBjWKciqBkuGfojqmx2LtcJIjHlgiJzs3-xzN2bX3O10rJ9U3XbEOCfQ8itnFSqRH-Z=w300-h200"
+		"image": "//lh4.googleusercontent.com/proxy/KPNtHyPVvC8EVcKQQ74jkAXHI4VykImiucge5geJx5ByZPFhU5rRkqeGYkh2GyKL0rLxrcx2_OSt7YWdpSBQBph12PRJZ2g-MvBjWKciqBkuGfojqmx2LtcJIjHlgiJzs3-xzN2bX3O10rJ9U3XbEOCfQ8itnFSqRH-Z=w300-h200",
+		"rating": "3",
+		"reviews": "data/review_chipotle.json"
 	},
 	{
 		"name": "Olive Garden",
