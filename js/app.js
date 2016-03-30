@@ -1,9 +1,10 @@
 /**
  * @ngdoc object
  * @name restaurantApp
+ * @requires ngRoute
  *
  * @description
- *
+ * Routes to different partials
  */
 angular.module('restaurantApp', ['ngRoute'])
 .config(['$routeProvider',
@@ -23,6 +24,13 @@ angular.module('restaurantApp', ['ngRoute'])
     }
 ])
 
+/**
+ * @ngdoc factory
+ * @name restaurants
+ *
+ * @description
+ * Gets the restaurants from json file
+ */
 .factory('restaurants', function($http) {
     return {
         get: function() {
@@ -33,14 +41,17 @@ angular.module('restaurantApp', ['ngRoute'])
 
 /**
  * @ngdoc controller
- * @name RestaurantListCtrl
+ * @name RootCtrl
  *
  * @description
- * Controller for the list of restaurants
+ * Root Controller - has the filtering criteria
  *
  */
 .controller('RootCtrl', ['$scope',  function($scope) {
 
+    /**
+     * Initializes the criteria
+     */
     $scope.init = function() {
         $scope.criteriatype = 'All types';
         $scope.criteriaprice = 'All prices';
@@ -48,13 +59,27 @@ angular.module('restaurantApp', ['ngRoute'])
     };
 
 }])
-
+/**
+ * @ngdoc controller
+ * @name ListCtrl
+ *
+ * @description
+ * Controller for the list of restaurants
+ *
+ */
 .controller('ListCtrl', ['$scope', 'restaurants', function($scope, restaurants) {
+    /**
+     * Initializes the list of restaurants
+     */
     $scope.init = function(){
         restaurants.get().then(function(response) {
             $scope.restaurants = response.data;
         });
     };
+
+    /**
+     * Filters the restaurants based on criteria
+     */
     $scope.filterRestaurants = function(element) {
 
         if ($scope.criteriatype !== 'All types')
@@ -76,5 +101,14 @@ angular.module('restaurantApp', ['ngRoute'])
     };
 
 }])
+
+/**
+ * @ngdoc controller
+ * @name RestaurantCtrl
+ *
+ * @description
+ * Controller for displaying a single restaurant
+ *
+ */
 .controller('RestaurantCtrl', ['$scope', 'restaurants', function($scope, restaurants) {
 }]);
