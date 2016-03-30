@@ -122,6 +122,7 @@ angular.module('restaurantApp', ['ngRoute', 'ui.bootstrap'])
     function($scope, $routeParams, restaurants) {
 
     $scope.init = function() {
+        $scope.stars = 0;
         restaurants.get().then( function(response) {
                 $scope.restaurant = response.data.find(function(restaurant) {
                     return restaurant.name == $routeParams.restaurant;
