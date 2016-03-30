@@ -126,6 +126,17 @@ angular.module('restaurantApp', ['ngRoute'])
                 $scope.restaurant = response.data.find(function(restaurant) {
                     return restaurant.name == $routeParams.restaurant;
                 });
+
+                if ($scope.restaurant.reviews)
+                {
+                    $.getJSON($scope.restaurant.reviews)
+                    .done(function(json) {
+                        console.log(json);
+                        $scope.$apply(function(){
+                           $scope.comments = json;
+                        });
+                    });
+                }
             }
         );
     };
