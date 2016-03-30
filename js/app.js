@@ -14,7 +14,7 @@ angular.module('restaurantApp', ['ngRoute'])
             templateUrl: '/partials/list.html',
             controller: 'ListCtrl'
         }).
-        when('/restaurant/:restaurantId', {
+        when('/restaurant/:restaurant', {
             templateUrl: '/partials/restaurant.html',
             controller: 'RestaurantCtrl'
         }).
@@ -67,7 +67,8 @@ angular.module('restaurantApp', ['ngRoute'])
  * Controller for the list of restaurants
  *
  */
-.controller('ListCtrl', ['$scope', 'restaurants', function($scope, restaurants) {
+.controller('ListCtrl', ['$scope', '$location', 'restaurants',
+    function($scope, $location, restaurants) {
     /**
      * Initializes the list of restaurants
      */
@@ -100,6 +101,13 @@ angular.module('restaurantApp', ['ngRoute'])
 
     };
 
+    /**
+     * Navigates to specific restaurant
+     */
+    $scope.viewRestaurant = function(restaurantname) {
+        $location.path('/restaurant/'+restaurantname);
+    };
+
 }])
 
 /**
@@ -110,5 +118,15 @@ angular.module('restaurantApp', ['ngRoute'])
  * Controller for displaying a single restaurant
  *
  */
-.controller('RestaurantCtrl', ['$scope', 'restaurants', function($scope, restaurants) {
+.controller('RestaurantCtrl', ['$scope', '$routeParams', 'restaurants',
+    function($scope, $routeParams, restaurants) {
+
+    $scope.init = function() {
+        restaurants.get().then( function(response) {
+                $scope.restaurant = response.data.find(function(restaurant) {
+                    return restaurant.name == $routeParams.restaurant;
+                });
+            }
+        );
+    };
 }]);
