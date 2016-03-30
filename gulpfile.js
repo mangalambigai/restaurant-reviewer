@@ -6,14 +6,14 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
 gulp.task('default', ['copy-html', 'copy-images', 'styles', 'lint', 'scripts', 'copy-data'], function() {
-	gulp.watch('js/**/*.js', ['lint', 'scripts']);
+	gulp.watch('js/*.js', ['lint', 'scripts']);
 	gulp.watch('index.html', ['copy-html']);
 	gulp.watch('partials/*.html', ['copy-html']);
 	gulp.watch('css/*.css', ['styles']);
 	gulp.watch('data/*.json', ['copy-data']);
 	gulp.watch('./dist/index.html').on('change', browserSync.reload);
 	gulp.watch('./dist/partials/*.html').on('change', browserSync.reload);
-	gulp.watch('./dist/js/**/*.js').on('change', browserSync.reload);
+	gulp.watch('./dist/js/*.js').on('change', browserSync.reload);
 
 	browserSync.init({
 		server: './dist'
@@ -29,16 +29,20 @@ gulp.task('dist', [
 ]);
 
 gulp.task('scripts', function() {
-	gulp.src('js/**/*.js')
+	gulp.src('js/*.js')
 		.pipe(concat('all.js'))
 		.pipe(gulp.dest('dist/js'));
+	gulp.src('js/lib/*.js')
+		.pipe(gulp.dest('dist/js/lib'));
 });
 
 gulp.task('scripts-dist', function() {
-	gulp.src('js/**/*.js')
+	gulp.src('js/*.js')
 		.pipe(concat('all.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'));
+	gulp.src('js/lib/*.js')
+		.pipe(gulp.dest('dist/js/lib'));
 });
 
 gulp.task('copy-html', function() {

@@ -6,7 +6,7 @@
  * @description
  * Routes to different partials
  */
-angular.module('restaurantApp', ['ngRoute'])
+angular.module('restaurantApp', ['ngRoute', 'ui.bootstrap'])
 .config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
