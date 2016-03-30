@@ -1,7 +1,7 @@
     <div class="container-fluid" ng-controller = "ListCtrl" ng-init= "init()">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="restaurant in restaurants| filter: filterRestaurants" tabindex="0" role="link" ng-click="viewRestaurant(restaurant.name)">
-                <img src="{{restaurant.image}}">
+                <img ng-src="{{restaurant.image}}">
                 <h3>{{restaurant.name}}</h3>
                 <uib-rating ng-model="restaurant.rating" read-only="true"></uib-rating>
                 <div>{{restaurant.address}}</div>
