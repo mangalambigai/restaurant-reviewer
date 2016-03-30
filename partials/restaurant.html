@@ -7,6 +7,13 @@
                 <strong>{{comment.reviewer}} - {{comment.date}}</strong>
                 <p><uib-rating ng-model="comment.stars" read-only="true"></uib-rating> {{comment.comments}}</p>
             </div>
+            <form class="form-horizontal">
+                Rate this place:
+                <uib-rating ng-model="stars"></uib-rating>
+                <br>
+                <textarea class="form-control">Please enter your comments here</textarea>
+                <button class="btn btn-primary">Share</button>
+            </form>
         </div>
     </div>
 </div>
