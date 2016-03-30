@@ -8,9 +8,11 @@ var uglify = require('gulp-uglify');
 gulp.task('default', ['copy-html', 'copy-images', 'styles', 'lint', 'scripts', 'copy-data'], function() {
 	gulp.watch('js/**/*.js', ['lint', 'scripts']);
 	gulp.watch('index.html', ['copy-html']);
+	gulp.watch('partials/*.html', ['copy-html']);
 	gulp.watch('css/*.css', ['styles']);
 	gulp.watch('data/*.json', ['copy-data']);
 	gulp.watch('./dist/index.html').on('change', browserSync.reload);
+	gulp.watch('./dist/partials/*.html').on('change', browserSync.reload);
 	gulp.watch('./dist/js/**/*.js').on('change', browserSync.reload);
 
 	browserSync.init({
@@ -43,6 +45,8 @@ gulp.task('copy-html', function() {
 
 	gulp.src('./index.html')
 		.pipe(gulp.dest('./dist'));
+	gulp.src('partials/*.html')
+		.pipe(gulp.dest('./dist/partials'));
 });
 
 gulp.task('copy-data', function() {
