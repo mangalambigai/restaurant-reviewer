@@ -6,7 +6,14 @@
  * @description
  * Routes to different partials
  */
-angular.module('restaurantApp', ['ngRoute', 'ui.bootstrap'])
+angular.module('restaurantApp', ['ngRoute', 'ui.bootstrap', 'ngAria'],
+    function config($ariaProvider) {
+        $ariaProvider.config({
+        ariaValue: true,
+        // by default aria assigns tabindex for each of the stars in rating
+        tabindex: false
+        });
+    })
 .config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.

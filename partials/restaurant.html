@@ -4,14 +4,14 @@
             <h1 tabindex="0">{{restaurant.name}}</h1>
             <p tabindex="0">{{restaurant.address}}</p>
             <div ng-repeat="comment in comments" tabindex="0">
-                <strong>{{comment.reviewer}} - {{comment.date}}</strong>
-                <p><uib-rating ng-model="comment.stars" read-only="true"></uib-rating> {{comment.comments}}</p>
+                <strong>{{comment.reviewer}} - {{comment.date}}.</strong>
+                <p><uib-rating ng-disabled="disabled" tabindex="-1" aria-label="{{comment.stars}} stars." ng-model="comment.stars" max="5" read-only="true"></uib-rating> {{comment.comments}}</p>
             </div>
             <form class="form-horizontal">
-                Rate this place:
-                <uib-rating max="5" ng-model="stars"  aria-labelledby="default-rating"></uib-rating>
+                <label for="rating" >Rate this place:</label>
+                <uib-rating id="rating" max="5" ng-model="stars"  aria-labelledby="default-rating"></uib-rating>
                 <br>
-                <textarea class="form-control" placeholder="Please enter your comments here"></textarea>
+                <textarea aria-label="Please type in your comments" class="form-control" placeholder="Please enter your comments here"></textarea>
                 <button class="btn btn-primary">Share</button>
             </form>
         </div>
