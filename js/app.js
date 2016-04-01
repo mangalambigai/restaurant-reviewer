@@ -30,6 +30,24 @@ angular.module('restaurantApp', ['ngRoute', 'ui.bootstrap', 'ngAria'],
         });
     }
 ])
+/**
+ * @ngdoc run
+ *
+ * @description
+ * sets the focus on the first form element when new view is loaded
+ *
+ */
+
+.run(['$location', '$rootScope', function($location, $rootScope) {
+    $rootScope.$on('$viewContentLoaded', function() {
+
+        // Default - set page focus to first input
+        var firstElement = $('h1').filter(
+            ':visible:first');
+        if (firstElement)
+            firstElement.focus();
+    });
+}])
 
 /**
  * @ngdoc factory
