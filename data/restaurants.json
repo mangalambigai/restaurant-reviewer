@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Subway",
-		"type": "Fast Food",
+		"type": ["Fast Food"],
 		"address": "18 Central St, Foxborough, MA 02035",
 		"phone": "(508) 543-1315",
 		"hours": [
@@ -13,7 +13,7 @@
 			"7AM–9:30PM",
 			"8AM–9:30PM"
 		],
-		"rating": "2.5",
+		"rating": "2",
 		"description": "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
 		"price": "$",
 		"image": "//lh5.googleusercontent.com/proxy/itHDWCZZ8VrMmtCmML_rlQt4OitZ66RhNEugsc7K3ZdvgeSDh4HMj9vWfiYBn_595wUWgJxQsWsHnGEzdxCrYhuuMMkcepbQFvSK78QRpmUNydco3wWkjo9UeB_9BvN8JAevDjLebr5O4Yj_xVjXPEk2Bq-nWirc_crF=w300-h200",
@@ -22,7 +22,7 @@
 
 	{
 		"name": "Wendy's",
-		"type": "Fast Food",
+		"type": ["Fast Food"],
 		"address": "64 Copeland Dr, Mansfield, MA 02048",
 		"phone": "(508) 339-7284",
 		"hours": [
@@ -46,7 +46,7 @@
 	{
 		"name": "Chipotle Mexican Grill",
 		"price": "$",
-		"type": "Mexican Restaurant",
+		"type": ["Mexican", "Fast Food"],
 		"address": "287 School St #110, Mansfield, MA 02048",
 		"phone": "(508) 339-2061",
 		"hours": [
@@ -67,7 +67,7 @@
 	{
 		"name": "Olive Garden",
 		"price": "$$",
-		"type": "Italian Restaurant",
+		"type": ["Italian"],
 		"address": "392 Patriot Pl, Foxborough, MA 02035",
 		"phone": "(508) 543-3967",
 		"hours": [

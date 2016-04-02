@@ -110,7 +110,7 @@ angular.module('restaurantApp', ['ngRoute', 'ui.bootstrap', 'ngAria'],
 
         if ($scope.criteriatype !== 'All types')
         {
-            if (element.type != $scope.criteriatype)
+            if (!element.type.includes($scope.criteriatype))
                 return false;
         }
         if ($scope.criteriaprice != 'All prices')
