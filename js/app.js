@@ -167,4 +167,8 @@ angular.module('restaurantApp', ['ngRoute', 'ui.bootstrap', 'ngAria'],
             }
         );
     };
+
+    $scope.skip = function() {
+        $('#rating').focus();
+    };
 }]);

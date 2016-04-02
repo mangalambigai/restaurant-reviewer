@@ -3,6 +3,7 @@
         <div class="col-md-12">
             <h1 id="h1" tabindex="0">{{restaurant.name}}</h1>
             <p tabindex="0">{{restaurant.address}}</p>
+            <button class="btn btn-primary" id="skip" ng-click="skip()">Skip other peoples' comments</button>
             <div ng-repeat="comment in comments" tabindex="0">
                 <strong>{{comment.reviewer}} - {{comment.date}}.</strong>
                 <p><uib-rating ng-disabled="disabled" tabindex="-1" aria-label="{{comment.stars}} stars." ng-model="comment.stars" max="5" read-only="true"></uib-rating> {{comment.comments}}</p>
