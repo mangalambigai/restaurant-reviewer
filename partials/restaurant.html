@@ -9,9 +9,10 @@
             </div>
             <form class="form-horizontal">
                 <label for="rating" >Rate this place:</label>
-                <uib-rating id="rating" max="5" ng-model="stars"  aria-labelledby="default-rating"></uib-rating>
+                <uib-rating id="rating" max="5" ng-model="stars"></uib-rating>
                 <br>
-                <textarea aria-label="Please type in your comments" class="form-control" placeholder="Please enter your comments here"></textarea>
+                <label class="sr-only" for="comments">Please enter your comments</label>
+                <textarea id="comments" name="comments" class="form-control" placeholder="Please enter your comments here"></textarea>
                 <button class="btn btn-primary">Share</button>
             </form>
         </div>
