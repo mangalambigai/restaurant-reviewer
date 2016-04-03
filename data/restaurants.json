@@ -16,7 +16,7 @@
 		"rating": "2",
 		"description": "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
 		"price": "$",
-		"image": "//lh5.googleusercontent.com/proxy/itHDWCZZ8VrMmtCmML_rlQt4OitZ66RhNEugsc7K3ZdvgeSDh4HMj9vWfiYBn_595wUWgJxQsWsHnGEzdxCrYhuuMMkcepbQFvSK78QRpmUNydco3wWkjo9UeB_9BvN8JAevDjLebr5O4Yj_xVjXPEk2Bq-nWirc_crF=w300-h200",
+		"image": "//lh5.googleusercontent.com/proxy/itHDWCZZ8VrMmtCmML_rlQt4OitZ66RhNEugsc7K3ZdvgeSDh4HMj9vWfiYBn_595wUWgJxQsWsHnGEzdxCrYhuuMMkcepbQFvSK78QRpmUNydco3wWkjo9UeB_9BvN8JAevDjLebr5O4Yj_xVjXPEk2Bq-nWirc_crF=w120-h90",
 		"imgDesc": "A thick sandwich with tomatoes, lettuce, onions and cheese. "
 	},
 
@@ -36,7 +36,7 @@
 		],
 		"price": "$",
 		"description": "Fast-food burger chain known for its shakes, as well as sides such as chili & baked potatoes.",
-		"image": "//lh3.googleusercontent.com/proxy/wsk7GjUsXBVl4EonXhTrFN0n8i8xjGqtMuH1StMmPbEdtdnA9qv2Iq0M8bSKLwhHgtxk8814-9l8JUAD9Fo0P4Re0kVA3lX8tQBeRf5TUZd4ROwA1KWwLBX6fyxrFv8EdffNj5XUWzUW4Q0itdUL0SJWUpM82koubam3=w300-h200",
+		"image": "//lh3.googleusercontent.com/proxy/wsk7GjUsXBVl4EonXhTrFN0n8i8xjGqtMuH1StMmPbEdtdnA9qv2Iq0M8bSKLwhHgtxk8814-9l8JUAD9Fo0P4Re0kVA3lX8tQBeRf5TUZd4ROwA1KWwLBX6fyxrFv8EdffNj5XUWzUW4Q0itdUL0SJWUpM82koubam3=w120-h90",
 		"imgDesc": "A big burger with two patties, a tomato slice, onion slice, lettuce and cheese.",
 		"rating": "3",
 		"reviews": "data/review_wendys.json"
@@ -59,7 +59,7 @@
 			"11AM–10PM"
 		],
 		"description": "Fast-food chain offering Mexican fare, including design-your-own burritos, tacos & bowls.",
-		"image": "//lh4.googleusercontent.com/proxy/KPNtHyPVvC8EVcKQQ74jkAXHI4VykImiucge5geJx5ByZPFhU5rRkqeGYkh2GyKL0rLxrcx2_OSt7YWdpSBQBph12PRJZ2g-MvBjWKciqBkuGfojqmx2LtcJIjHlgiJzs3-xzN2bX3O10rJ9U3XbEOCfQ8itnFSqRH-Z=w300-h200",
+		"image": "//lh4.googleusercontent.com/proxy/KPNtHyPVvC8EVcKQQ74jkAXHI4VykImiucge5geJx5ByZPFhU5rRkqeGYkh2GyKL0rLxrcx2_OSt7YWdpSBQBph12PRJZ2g-MvBjWKciqBkuGfojqmx2LtcJIjHlgiJzs3-xzN2bX3O10rJ9U3XbEOCfQ8itnFSqRH-Z=w120-h90",
 		"imgDesc": "Rice bowl with lettuce, cheese, beans and guacamole.",
 		"rating": "3",
 		"reviews": "data/review_chipotle.json"
@@ -81,7 +81,7 @@
 		],
 		"rating": "4",
 		"description": "Lively, family-friendly chain featuring Italian standards such as pastas & salads, with a full bar.",
-		"image": "//lh5.googleusercontent.com/proxy/bQw_EYcwZkF6uz5VuIbq0WA36U_vGxp2qsMMQHceNjaRqj_kMhtMTidaSk6Vngk0uQ4uANgJLxPD0PEeePSjgShS7P74bRON5-q0tWIppxxjHZLl12ppjTZC1sXDYI4z7RU-4-qtmfa4AyWAoXoJeYPLXPY0IdVXBVGn=w300-h200",
+		"image": "//lh5.googleusercontent.com/proxy/bQw_EYcwZkF6uz5VuIbq0WA36U_vGxp2qsMMQHceNjaRqj_kMhtMTidaSk6Vngk0uQ4uANgJLxPD0PEeePSjgShS7P74bRON5-q0tWIppxxjHZLl12ppjTZC1sXDYI4z7RU-4-qtmfa4AyWAoXoJeYPLXPY0IdVXBVGn=w120-h90",
 		"imgDesc": "A plate of six ravioli garnished with herbs."
 	}
 ]

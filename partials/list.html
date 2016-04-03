@@ -5,24 +5,40 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="restaurant in restaurants| filter: filterRestaurants as filtered" tabindex="0" role="link">
-                <h3>{{restaurant.name}}</h3>
-                <img ng-src="{{restaurant.image}}" alt="">
+            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="restaurant in restaurants| filter: filterRestaurants as filtered" tabindex="0">
+                <h4>{{restaurant.name}}</h4>
                 <uib-rating aria-label="Rating {{restaurant.rating}} stars." ng-model="restaurant.rating" read-only="true" tabindex="-1"></uib-rating>
-                <span class="text-right" ><a href="#/restaurant/{{restaurant.name}}">View Comments</a></span>
-                <div>{{restaurant.address}}.</div>
-                <div>{{restaurant.phone}}.</div>
-                <div>{{restaurant.description}}</div>
-                <button type="button" class="btn btn-xs" ng-click="restaurant.isHoursExpanded = !restaurant.isHoursExpanded">Toggle Hours</button>
-                <div uib-collapse="!restaurant.isHoursExpanded">
-                    <div class="well well-sm">
-                        Sunday: {{restaurant.hours[0]}}.
-                        <br>Monday: {{restaurant.hours[1]}}.
-                        <br>Tuesday: {{restaurant.hours[2]}}.
-                        <br>Wednesday: {{restaurant.hours[3]}}.
-                        <br>Thursday: {{restaurant.hours[4]}}.
-                        <br>Friday: {{restaurant.hours[5]}}.
-                        <br>Saturday: {{restaurant.hours[6]}}.
+                <a class="pull-right" href="#/restaurant/{{restaurant.name}}" aria-label="View comments for {{restaurant.name}}.">View Comments</a>
+                <div><strong>{{restaurant.address}}.</strong></div>
+                <div>
+                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                    <span class="sr-only">Phone:</span>
+                    {{restaurant.phone}}.
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-9">
+                        <small>
+                            {{restaurant.description}}
+                        </small>
+                        <br>
+                        <button type="button" class="btn btn-xs" ng-click="restaurant.isHoursExpanded = !restaurant.isHoursExpanded" aria-label="toggle hours for {{restaurant.name}}." >Toggle Hours</button>
+                        <div uib-collapse="!restaurant.isHoursExpanded" aria-live="polite">
+                            <div class="well well-sm">
+                            <small>
+                                Sunday: {{restaurant.hours[0]}}.
+                                <br>Monday: {{restaurant.hours[1]}}.
+                                <br>Tuesday: {{restaurant.hours[2]}}.
+                                <br>Wednesday: {{restaurant.hours[3]}}.
+                                <br>Thursday: {{restaurant.hours[4]}}.
+                                <br>Friday: {{restaurant.hours[5]}}.
+                                <br>Saturday: {{restaurant.hours[6]}}.
+                            </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                    <img ng-src="{{restaurant.image}}" alt="" width="100%">
                     </div>
                 </div>
             </div>
