@@ -1,30 +1,33 @@
-    <div class="container-fluid" ng-controller = "ListCtrl" ng-init= "init()">
-        <div class="row">
-            <div class="col-md-12">
+<div class="container-fluid" ng-controller = "ListCtrl" ng-init= "init()">
+    <div class="row">
+        <div class="col-md-12">
             <span class="sr-only" role="status" aria-live="polite">{{filtered.length}} restaurants shown.</span>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="restaurant in restaurants| filter: filterRestaurants as filtered" tabindex="0">
-                <h4>{{restaurant.name}}</h4>
-                <uib-rating aria-label="Rating {{restaurant.rating}} stars." ng-model="restaurant.rating" read-only="true" tabindex="-1"></uib-rating>
-                <a class="pull-right" href="#/restaurant/{{restaurant.name}}" aria-label="View comments for {{restaurant.name}}.">View Comments</a>
-                <div><strong>{{restaurant.address}}.</strong></div>
-                <div>
-                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-                    <span class="sr-only">Phone:</span>
-                    {{restaurant.phone}}.
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="restaurant in restaurants| filter: filterRestaurants as filtered" tabindex="0">
+            <h4>{{restaurant.name}}</h4>
+            <uib-rating aria-label="Rating {{restaurant.rating}} stars." ng-model="restaurant.rating" read-only="true" tabindex="-1"></uib-rating>
+            <a class="pull-right" href="#/restaurant/{{restaurant.name}}" aria-label="View comments for {{restaurant.name}}.">View Comments</a>
+            <div>
+                <strong>{{restaurant.address}}.</strong>
+            </div>
+            <div>
+                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                <span class="sr-only">Phone:</span>
+                {{restaurant.phone}}.
+            </div>
+            <div class="container-fluid">
 
-                <div class="row">
-                    <div class="col-xs-9">
-                        <small>
-                            {{restaurant.description}}
-                        </small>
-                        <br>
-                        <button type="button" class="btn btn-xs" ng-click="restaurant.isHoursExpanded = !restaurant.isHoursExpanded" aria-label="toggle hours for {{restaurant.name}}." >Toggle Hours</button>
-                        <div uib-collapse="!restaurant.isHoursExpanded" aria-live="polite">
-                            <div class="well well-sm">
+            <div class="row">
+                <div class="col-xs-8">
+                    <small>
+                        {{restaurant.description}}
+                    </small>
+                    <br>
+                    <button type="button" class="btn btn-xs" ng-click="restaurant.isHoursExpanded = !restaurant.isHoursExpanded" aria-label="toggle hours for {{restaurant.name}}." >Toggle Hours</button>
+                    <div uib-collapse="!restaurant.isHoursExpanded" aria-live="polite">
+                        <div class="well well-sm">
                             <small>
                                 Sunday: {{restaurant.hours[0]}}.
                                 <br>Monday: {{restaurant.hours[1]}}.
@@ -34,13 +37,15 @@
                                 <br>Friday: {{restaurant.hours[5]}}.
                                 <br>Saturday: {{restaurant.hours[6]}}.
                             </small>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-3">
+                </div>
+                <div class="col-xs-4">
                     <img ng-src="{{restaurant.image}}" alt="" width="100%">
-                    </div>
                 </div>
             </div>
+            </div>
+            <hr>
         </div>
     </div>
+</div>
