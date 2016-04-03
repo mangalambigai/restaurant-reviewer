@@ -1,25 +1,4 @@
 [
-	{
-		"name": "Subway",
-		"type": ["Fast Food"],
-		"address": "18 Central St, Foxborough, MA 02035",
-		"phone": "(508) 543-1315",
-		"hours": [
-			"8AM–9:30PM",
-			"7AM–9:30PM",
-			"7AM–9:30PM",
-			"7AM–9:30PM",
-			"7AM–9:30PM",
-			"7AM–9:30PM",
-			"8AM–9:30PM"
-		],
-		"rating": "2",
-		"description": "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
-		"price": "$",
-		"image": "//lh5.googleusercontent.com/proxy/itHDWCZZ8VrMmtCmML_rlQt4OitZ66RhNEugsc7K3ZdvgeSDh4HMj9vWfiYBn_595wUWgJxQsWsHnGEzdxCrYhuuMMkcepbQFvSK78QRpmUNydco3wWkjo9UeB_9BvN8JAevDjLebr5O4Yj_xVjXPEk2Bq-nWirc_crF=w120-h90",
-		"imgDesc": "A thick sandwich with tomatoes, lettuce, onions and cheese. ",
-		"reviews": "data/review_subway.json"
-	},
 
 	{
 		"name": "Wendy's",
@@ -64,6 +43,27 @@
 		"imgDesc": "Rice bowl with lettuce, cheese, beans and guacamole.",
 		"rating": "3",
 		"reviews": "data/review_chipotle.json"
+	},
+	{
+		"name": "Subway",
+		"type": ["Fast Food"],
+		"address": "18 Central St, Foxborough, MA 02035",
+		"phone": "(508) 543-1315",
+		"hours": [
+			"8AM–9:30PM",
+			"7AM–9:30PM",
+			"7AM–9:30PM",
+			"7AM–9:30PM",
+			"7AM–9:30PM",
+			"7AM–9:30PM",
+			"8AM–9:30PM"
+		],
+		"rating": "2",
+		"description": "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
+		"price": "$",
+		"image": "//lh5.googleusercontent.com/proxy/itHDWCZZ8VrMmtCmML_rlQt4OitZ66RhNEugsc7K3ZdvgeSDh4HMj9vWfiYBn_595wUWgJxQsWsHnGEzdxCrYhuuMMkcepbQFvSK78QRpmUNydco3wWkjo9UeB_9BvN8JAevDjLebr5O4Yj_xVjXPEk2Bq-nWirc_crF=w120-h90",
+		"imgDesc": "A thick sandwich with tomatoes, lettuce, onions and cheese. ",
+		"reviews": "data/review_subway.json"
 	},
 	{
 		"name": "Olive Garden",
@@ -179,7 +179,7 @@
 			"11AM-1AM"
 		],
 		"rating": "4",
-		"description": "local restaurant famous for steak tips and pizza.",
+		"description": "Local restaurant famous for steak tips and pizza. large bar and the side room with pool tables for adults, old fashion wooden booth dining room for families.",
 		"image": "//lh5.googleusercontent.com/proxy/2XEf7P3oldJ4SerOXRkDCz7nfFWpI9HNAs2OVP8phu_ha4yGVdc5v8tQvHfieW-3KrStDvqzsjQ_yk42ats4A4-QQD3Lx9ZFVeHMjpxuRHNhsis-CKI0E6G9lKZPOXckSVUeo4QiJlTY4PFz1rEUKhPkaVFmej4=w120-h90"
 	}
 ]
