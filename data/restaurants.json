@@ -83,5 +83,99 @@
 		"description": "Lively, family-friendly chain featuring Italian standards such as pastas & salads, with a full bar.",
 		"image": "//lh5.googleusercontent.com/proxy/bQw_EYcwZkF6uz5VuIbq0WA36U_vGxp2qsMMQHceNjaRqj_kMhtMTidaSk6Vngk0uQ4uANgJLxPD0PEeePSjgShS7P74bRON5-q0tWIppxxjHZLl12ppjTZC1sXDYI4z7RU-4-qtmfa4AyWAoXoJeYPLXPY0IdVXBVGn=w120-h90",
 		"imgDesc": "A plate of six ravioli garnished with herbs."
+	},
+	{
+		"name": "Quan's Kitchen",
+		"price": "$$",
+		"type": ["Chinese"],
+		"address": "30 Chauncy St, Mansfield, MA 02048",
+		"phone": "(508) 261-7826",
+		"hours": [
+			"12–10PM",
+			"11AM–10PM",
+			"11AM–10PM",
+			"11AM–10PM",
+			"11AM–10:30PM",
+			"11AM–10:30PM",
+			"11AM–10:30PM"
+		],
+		"rating": "4",
+		"description": "Local chain serving traditional Chinese dishes in a relaxed setting. Some also serve sushi.."
+	},
+	{
+		"name": "Tahana Restaurant",
+		"price": "$$",
+		"type": ["Chinese"],
+		"address": "60 Oakland St, Mansfield, MA 02048",
+		"phone": "(508) 337-8500",
+		"hours": [
+			"3PM–1AM",
+			"3PM–1AM",
+			"3PM–1AM",
+			"3PM–1AM",
+			"3PM–1AM",
+			"3PM–1AM",
+			"3PM–1AM"
+		],
+		"rating": "4",
+		"description": "As a neighborhood restaurant and bar, Tahana is a friendly and inviting place for friends and family to gather and relax.",
+		"image": "//lh5.googleusercontent.com/proxy/s26TZplbLHh_PfCuwBAisok3Hzcz40K-OcdlOVEds01sgxTwmi-Pdhurwv-14tdw_dcLPCsElRf3zwLWHqPRrVC48JwZOGHj_af1oCM3rPjny0kJq2ieckUXg3T5x1f_d2e1P_JiqFu_XgvjhcoJ7ehZi3xtgg=w120-h90"
+	},
+	{
+		"name": "Fresh Catch",
+		"price": "$$",
+		"type": ["Seafood"],
+		"address": "30 Chauncy St #4, Mansfield, MA 02048",
+		"phone": "(508) 339-5187",
+		"hours": [
+			"9AM–8PM",
+			"9AM–8PM",
+			"9AM–8PM",
+			"9AM–8PM",
+			"9AM–8PM",
+			"9AM–8PM",
+			"9AM–8PM"
+		],
+		"rating": "3",
+		"description": "Chain known for local seafood, choice steaks, chops and more. Mansfield restaurant features a complete Sushi bar and full liquor licenses.",
+		"image": "//lh5.googleusercontent.com/proxy/WiLG30vGk8xSYU_Bms7Xk504UTTetJzbb10-Di89TGPifDS8_GBnbbW_JeegMQ4TfXTLDn76ULG37s9QT9aB1sWxTlXDChOYYddfoh_4Lqwqr4M_sgvmVaAijiOBX7qnOUeaETUvhgrQRLkiQsE1LqoNg4swLys=w120-h90"
+	},
+	{
+		"name": "Cheng-Du Restaurant",
+		"price": "$$",
+		"type": ["Chinese"],
+		"address": "249 N Main St, Mansfield, MA 02048",
+		"phone": "(508) 339-5946",
+		"hours": [
+			"12–10PM",
+			"11:30AM–10PM",
+			"11:30AM–10PM",
+			"11:30AM–10PM",
+			"11:30AM–10PM",
+			"11:30AM–11PM",
+			"12–11PM"
+		],
+		"rating": "4",
+		"description": "Easygoing eatery specializing in Sichuan- & Mandarin-style Chinese cuisine, plus tropical cocktails.",
+		"image": "//lh5.googleusercontent.com/proxy/Jjp1j3t7-ghxXNdEFp5HYUxtZPM0H2cQga1c832Ne0qX9oq8qiaEu17fb-qZCBkdbnB5MmnT1eYDVK4Ug7T9xYBjuLKtUzge6aiHHPDIvYOrbrNBKDqO-Q77ysE7kWE3cyP8g6Tf0ait0604BEaVdzAujxo=w120-h90"
+	},
+	{
+		"name": "Catman Cafe",
+		"price": "$$",
+		"type": ["Restaurant"],
+		"address": "16 Old Colony Rd, Mansfield, MA 02048",
+		"phone": "(508) 339-0038",
+		"hours": [
+			"11AM-1AM",
+			"11AM-1AM",
+			"11AM-1AM",
+			"11AM-1AM",
+			"11AM-1AM",
+			"11AM-1AM",
+			"11AM-1AM"
+		],
+		"rating": "4",
+		"description": "local restaurant famous for steak tips and pizza.",
+		"image": "//lh5.googleusercontent.com/proxy/2XEf7P3oldJ4SerOXRkDCz7nfFWpI9HNAs2OVP8phu_ha4yGVdc5v8tQvHfieW-3KrStDvqzsjQ_yk42ats4A4-QQD3Lx9ZFVeHMjpxuRHNhsis-CKI0E6G9lKZPOXckSVUeo4QiJlTY4PFz1rEUKhPkaVFmej4=w120-h90"
 	}
 ]
