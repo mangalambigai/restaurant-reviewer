@@ -16,7 +16,8 @@
             <uib-rating aria-label="Rating {{restaurant.rating}} stars." ng-model="restaurant.rating" read-only="true" tabindex="-1"></uib-rating>
             <a class="pull-right" href="#/restaurant/{{restaurant.name}}" aria-label="View comments for {{restaurant.name}}.">View Comments</a>
             <div>
-                <strong>{{restaurant.address}}.</strong>
+                <span class="sr-only">Address:</span>
+                <strong> {{restaurant.address}}.</strong>
             </div>
             <div>
                 <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
