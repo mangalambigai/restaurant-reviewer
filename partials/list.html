@@ -5,7 +5,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="restaurant in restaurants| filter: filterRestaurants as filtered" tabindex="0">
+        <div ng-repeat-start= "restaurant in restaurants| filter: filterRestaurants as filtered">
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" tabindex="0">
+
+            <div class="well">
+
             <h4>{{restaurant.name}}</h4>
             <uib-rating aria-label="Rating {{restaurant.rating}} stars." ng-model="restaurant.rating" read-only="true" tabindex="-1"></uib-rating>
             <a class="pull-right" href="#/restaurant/{{restaurant.name}}" aria-label="View comments for {{restaurant.name}}.">View Comments</a>
@@ -25,7 +31,7 @@
                         {{restaurant.description}}
                     </small>
                     <br>
-                    <button type="button" class="btn btn-xs" ng-click="restaurant.isHoursExpanded = !restaurant.isHoursExpanded" aria-label="toggle hours for {{restaurant.name}}." >Toggle Hours</button>
+                    <button type="button" class="btn btn-xs btn-primary" ng-click="restaurant.isHoursExpanded = !restaurant.isHoursExpanded" aria-label="toggle hours for {{restaurant.name}}." >Toggle Hours</button>
                     <div uib-collapse="!restaurant.isHoursExpanded" aria-live="polite">
                         <div class="well well-sm">
                             <small>
@@ -45,7 +51,12 @@
                 </div>
             </div>
             </div>
-            <hr>
+            </div>
+        </div>
+        <div ng-if="$index % 2 == 1" class="clearfix visible-sm-block"></div>
+        <div ng-if="$index % 3 == 2" class="clearfix visible-md-block visible-lg-block"></div>
+        <div ng-repeat-end>
+
         </div>
     </div>
 </div>
