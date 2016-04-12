@@ -18,11 +18,11 @@ angular.module('restaurantApp', ['ngRoute', 'ui.bootstrap', 'ngAria'],
     function ($routeProvider) {
         $routeProvider.
         when('/restaurants', {
-            templateUrl: '/partials/list.html',
+            templateUrl: 'partials/list.html',
             controller: 'ListCtrl'
         }).
         when('/restaurant/:restaurant', {
-            templateUrl: '/partials/restaurant.html',
+            templateUrl: 'partials/restaurant.html',
             controller: 'RestaurantCtrl'
         }).
         otherwise({
