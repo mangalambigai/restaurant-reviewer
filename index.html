@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="restaurantApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Restaurant Reviews</title>
+</head>
+
+<body ng-controller="RootCtrl" ng-init="init()">
+    <header>
+        <div class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Restaurant Reviews</a>
+                </div>
+                <form class="navbar-form navbar-left" role="search">
+                    <select aria-label="Search by type" class="form-control" ng-model="criteriatype" ng-change="typeChanged()">
+                        <option>All types</option>
+                        <option>Fast Food</option>
+                        <option>Mexican</option>
+                        <option>Italian</option>
+                        <option>Chinese</option>
+                        <option>Pizza</option>
+                    </select>
+                    <select aria-label="Search by price" class="form-control" ng-model="criteriaprice" ng-change="priceChanged()">
+                        <option>All prices</option>
+                        <option value="$">Low</option>
+                        <option value="$$">Medium</option>
+                        <option value="$$$">High</option>
+                    </select>
+                    <select aria-label="Search by Rating" class="form-control" ng-model="criteriarating" ng-change="ratingChanged()">
+                        <option>All ratings</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div ng-view></div>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/lib/angular-ui.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-aria.min.js"></script>
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>

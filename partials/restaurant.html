@@ -1,0 +1,23 @@
+<div class="container" ng-controller="RestaurantCtrl" ng-init="init()">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 id="h1" tabindex="0">{{restaurant.name}}</h1>
+            <p tabindex="0">{{restaurant.address}}</p>
+            <button class="btn btn-primary" id="skip" ng-click="skip()">Skip other peoples' comments</button>
+            <div ng-repeat="comment in comments" tabindex="0">
+                <strong>{{comment.reviewer}} - {{comment.date}}.</strong>
+                <p><uib-rating ng-disabled="disabled" tabindex="-1" aria-label="{{comment.stars}} stars." ng-model="comment.stars" max="5" read-only="true"></uib-rating> {{comment.comments}}</p>
+            </div>
+            <form class="form-horizontal">
+                <label for="rating" >Rate this place:</label>
+                <uib-rating id="rating" max="5" ng-model="stars"></uib-rating>
+                <br>
+                <label class="sr-only" for="comments">Please enter your comments</label>
+                <textarea id="comments" name="comments" class="form-control" placeholder="Please enter your comments here"></textarea>
+                <button class="btn btn-primary">Share</button>
+                <a href="/"><button class="btn btn-primary">Back</button></a>
+            </form>
+        </div>
+    </div>
+</div>
+
