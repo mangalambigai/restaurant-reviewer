@@ -62,7 +62,7 @@
 		"description": "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
 		"price": "$",
 		"image": "//lh5.googleusercontent.com/proxy/itHDWCZZ8VrMmtCmML_rlQt4OitZ66RhNEugsc7K3ZdvgeSDh4HMj9vWfiYBn_595wUWgJxQsWsHnGEzdxCrYhuuMMkcepbQFvSK78QRpmUNydco3wWkjo9UeB_9BvN8JAevDjLebr5O4Yj_xVjXPEk2Bq-nWirc_crF=w120-h90",
-		"imgDesc": "Image of a thick sandwich. ",
+		"imgDesc": "Image of a sandwich. ",
 		"reviews": "data/review_subway.json"
 	},
 	{
@@ -125,7 +125,7 @@
 		"rating": "4",
 		"description": "Local chain serving traditional Chinese dishes in a relaxed setting. Some also serve sushi..",
 		"image": "data:image/png;base64,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",
-		"imgDesc": "Image of quans kitchen.",
+		"imgDesc": "Map of quans kitchen.",
 		"reviews": "data/review_quans.json"
 	},
 	{
@@ -166,7 +166,7 @@
 		"rating": "4",
 		"description": "Easygoing eatery specializing in Sichuan- & Mandarin-style Chinese cuisine, plus tropical cocktails.",
 		"image": "//lh5.googleusercontent.com/proxy/Jjp1j3t7-ghxXNdEFp5HYUxtZPM0H2cQga1c832Ne0qX9oq8qiaEu17fb-qZCBkdbnB5MmnT1eYDVK4Ug7T9xYBjuLKtUzge6aiHHPDIvYOrbrNBKDqO-Q77ysE7kWE3cyP8g6Tf0ait0604BEaVdzAujxo=w120-h90",
-		"imgDesc": "Image of restaurant."
+		"imgDesc": "Image of Cheng du restaurant."
 	},
 	{
 		"name": "Catman Cafe",
@@ -186,6 +186,6 @@
 		"rating": "4",
 		"description": "Local restaurant famous for steak tips and pizza. large bar and the side room with pool tables for adults, old fashion wooden booth dining room for families.",
 		"image": "//lh5.googleusercontent.com/proxy/2XEf7P3oldJ4SerOXRkDCz7nfFWpI9HNAs2OVP8phu_ha4yGVdc5v8tQvHfieW-3KrStDvqzsjQ_yk42ats4A4-QQD3Lx9ZFVeHMjpxuRHNhsis-CKI0E6G9lKZPOXckSVUeo4QiJlTY4PFz1rEUKhPkaVFmej4=w120-h90",
-		"imgDesc": "Image of restaurant."
+		"imgDesc": "Image of Catman cafe."
 	}
 ]
